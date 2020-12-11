@@ -1,5 +1,5 @@
 body, button {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
 }
 
 * {
@@ -51,6 +51,10 @@ li {
   align-items: center;
 }
 
+.u-space-between {
+  justify-content: space-between;
+}
+
 .u-m-b {
   margin-bottom: 30px;
 }
@@ -61,6 +65,11 @@ li {
 
 .u-center-text {
   text-align: center;
+}
+
+.u-red-text {
+  color: #f72b3b;
+  font-weight: 700;
 }
 
 .blog__card {
@@ -115,6 +124,7 @@ li {
   font-weight: 300;
   color: #fff;
   display: inline-block;
+  min-width: 150px;
 }
 .btn--orange {
   background-color: #ff6033;
@@ -127,6 +137,9 @@ li {
 }
 .btn--red {
   background-color: #f72b3b;
+}
+.btn--aqua {
+  background-color: #00c4c4;
 }
 
 .servises__list {
@@ -172,12 +185,13 @@ li {
 .servises__list--organized::before {
   background-image: url(../img/organazed.png);
 }
-.servises__list_heading {
+.servises__list_link {
   width: 100%;
   font-size: 20px;
   font-weight: 700;
   text-align: center;
   padding-right: 100px;
+  cursor: pointer;
 }
 
 .header {
@@ -199,6 +213,8 @@ li {
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
+  transform: translateY(2px);
+  transition: all ease-out 0.5s;
 }
 .header__link::before {
   content: "";
@@ -210,6 +226,9 @@ li {
   background-color: #ff6033;
   display: inline-block;
   transition: width 0.1s;
+}
+.header__link:hover {
+  transform: translateY(-2px);
 }
 .header__link:hover::before {
   width: 100%;
@@ -685,7 +704,7 @@ li {
 }
 
 .about {
-  background-color: #00b0b0;
+  background-color: #00c4c4;
 }
 .about__img {
   max-width: 100%;
@@ -754,6 +773,8 @@ li {
 .contact {
   padding: 100px 0;
   background-image: url(../img/contact_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .contact__text {
   margin: 0 auto;
@@ -766,14 +787,30 @@ li {
 .contact__form_item {
   width: 100%;
   height: 50px;
-  background-color: #00c4c4;
+  background-color: rgba(0, 196, 196, 0.5);
   color: #fff;
   margin-bottom: 18px;
   outline: none;
   border: none;
+  font-size: 15px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 700;
+  padding: 0 15px;
+  border-left: 5px solid transparent;
+}
+.contact__form_item:focus {
+  background-color: #00c4c4;
+  border-left: 5px solid #70bfff;
 }
 .contact__form_item::placeholder {
   color: #fff;
+  font-size: 15px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 400;
+}
+.contact__form_textarea {
+  resize: none;
+  height: 250px;
 }
 .contact__adress {
   font-style: normal;
@@ -786,4 +823,16 @@ li {
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 15px;
+}
+
+.footer {
+  background-color: #262626;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+}
+.footer__text {
+  text-align: right;
 }

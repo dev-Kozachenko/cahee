@@ -51,11 +51,12 @@
         background-image: url(../img/organazed.png);               
     }
 
-    &_heading {
-        width: 100%;
+    &_link {
+        width: 100%; 
         font-size: 20px;
         font-weight: 700;
         text-align: center;
         padding-right: 100px;
+        cursor: pointer;
     }
 }

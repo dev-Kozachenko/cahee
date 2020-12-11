@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.u-space-between {
+    justify-content: space-between;
+}
+
 .u-m-b {
     margin-bottom: 30px;
 }
@@ -14,4 +18,9 @@
 
 .u-center-text {
     text-align: center;
+}
+
+.u-red-text {
+    color: $color-red;
+    font-weight: 700;
 }

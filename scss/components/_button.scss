@@ -8,6 +8,7 @@
     font-weight: 300;
     color: $color-white;
     display: inline-block;
+    min-width: 150px;
 
     &--orange {
         background-color: $color-orange;
@@ -24,4 +25,9 @@
     &--red {
         background-color: $color-red;
     }
+
+    &--aqua {
+        background-color: $color-aqua;
+    }
 }
+
