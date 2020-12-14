@@ -5,6 +5,10 @@
 
     &__text {
         margin-top: 15vh;
+
+        @media (max-width: $SM) {
+           margin-top: 10vh;
+          }
     }
     
     &__paragraph {
@@ -18,6 +22,9 @@
         bottom:70px;
         left: 50%;
 
+        @media (max-width: $SM) {
+            display: none;
+        }
     }
 }
 
@@ -31,22 +38,49 @@
 
 .servises {
     background-color: $color-blue-light;
-    height: 790px;
+    min-height: 790px;
+    padding: 150px 0;
+
+    @media (max-width: $LG) {
+        padding: 60px 0;
+    }
+
+    @media (max-width: $SM) {
+        padding: 30px 0;
+    }
 
     &__heading-block {
         background-image: url(../img/servises_background.png);
-        background-size: 80%;
+        background-size: 70%;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
+
+        @media (max-width: $MD) {
+            height: 400px;
+        }
+
+        @media (max-width: $SM) {
+            height: 250px;
+        }
     }
+
 }
 
 .gallery {
     background-color: $color-yellow;
     padding: 100px 0;
+
+    @media (max-width: $LG) {
+        padding: 60px 0;
+    }
+
+    @media (max-width: $SM) {
+        padding: 30px 0;
+    }
 
     &__text {
         margin: 0 auto;
@@ -64,8 +98,16 @@
         padding: 150px 0;
         background-position: right;
 
-        & .paragraph {
+        @media (max-width: $SM) {
+            padding: 60px 0;
+        }
+
+        &-text {
             max-width: 50%;
+
+            @media (max-width: $SM) {
+                max-width: 60%;
+              }
         }
     }
 
@@ -78,6 +120,11 @@
         height: 55px;
         outline: none;
         margin-right: 30px;
+        margin-bottom: 10px;
+
+        @media (max-width: $SM) {
+          width: 100%;
+        }
     }
 
     &__submit {
@@ -92,6 +139,14 @@
     padding: 100px 0;
     color: $color-white;
 
+    @media (max-width: $LG) {
+        padding: 60px 0;
+    }
+
+    @media (max-width: $SM) {
+        padding: 30px 0;
+    }
+
     &__text {
         margin: 0 auto;
         max-width: 580px;
@@ -104,6 +159,14 @@
         background-image: url(../img/contact_bg.png);
         background-size: cover;
         background-repeat: no-repeat;
+
+        @media (max-width: $LG) {
+            padding: 60px 0;
+        }
+
+        @media (max-width: $SM) {
+            padding: 30px 0;
+        }
 
         &__text {
             margin: 0 auto;
@@ -123,10 +186,16 @@
                 outline: none;
                 border: none;
                 font-size: 15px;
-                font-family: $default-font;
+                font-family: $default-fonts;
                 font-weight: 700;
                 padding: 0 15px;
                 border-left: 5px solid transparent;
+
+                @media (max-width: $SM) {
+                   height: 35px;
+                   margin-bottom: 10px;
+                   padding: 0 5px;
+                  }
 
                 &:focus {
                     background-color: $color-aqua;
@@ -136,7 +205,7 @@
                 &::placeholder {
                     color: $color-white;
                     font-size: 15px;
-                    font-family: $default-font;
+                    font-family: $default-fonts;
                     font-weight: 400;
                 }
             }
@@ -153,12 +222,20 @@
             &_list {
                 text-transform: uppercase;
                 font-size: $default-font-size;
+
+                @media (max-width: $SM) {
+                    font-size: $small-font-size;
+                  }
             }
 
             &_text {
                 font-size: 20px;
                 font-weight: 300;
                 margin-bottom: 15px;
+
+                @media (max-width: $SM) {
+                    font-size: $default-font-size;
+                  }
             }
         }
     }

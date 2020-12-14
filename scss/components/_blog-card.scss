@@ -5,7 +5,19 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 30px;
+    min-height: 320px;
+
+    @media (max-width: $LG) {
+      padding: 10px;
+      min-height: 250px;
+  }
+
+  @media (max-width: $MD) {
+    padding: 30px;
+    min-height: 320px;
+}
 
     &--1 {
         background-image: url(../img/blog_1.png);
@@ -36,16 +48,24 @@
     }
   }
   &__list {
-    margin-top: 120px;
+    padding-top: 90px;
 
     &--topic {
         font-size: 20px;
         font-weight: bold;
+
+        @media (max-width: $LG) {
+          font-size: $small-font-size;
+      }
+      
+      @media (max-width: $LG) {
+        font-size: 20px;
+    }
     }
 
     &--author {
         font-size: 13px;
-    padding-top: 20px;
+        padding-top: 20px;
     }
   }
 }

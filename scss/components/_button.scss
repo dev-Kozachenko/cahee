@@ -10,6 +10,11 @@
     display: inline-block;
     min-width: 150px;
 
+    @media (max-width: $SM) {
+        padding: 10px 20px;
+        font-size: $small-font-size;
+    }
+
     &--orange {
         background-color: $color-orange;
 

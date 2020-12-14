@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Cahee</title>
 </head>
@@ -15,7 +14,11 @@
                     <a class="header__logo-link" href="#">
                         <img class="header__logo-img" src="img/logo.png" alt="logo">
                     </a>
-                <nav class="header__nav">              
+                <nav class="header__nav">
+                    <input class="header__nav_input" hidden type="checkbox" id="menuBtn">
+                    <label for="menuBtn" class="header__nav_btn">
+                        <span class="header__nav_span"></span>
+                    </label>           
                     <ul class="header__list">
                         <li class="header__item"><a href="#" class="header__link">Home</a></li>
                         <li class="header__item"><a href="#about" class="header__link">About</a></li>
@@ -45,10 +48,10 @@
     <section class="about" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-md-12">
                     <img class="about__img" src="img/about.png" alt="#">
                 </div>
-                <div class="col-6 u-d-flex-center">
+                <div class="col-6 col-md-12 u-d-flex-center">
                     <div class="about__text">
                         <h2 class="heading-primary text-white">
                             About Us
@@ -64,7 +67,7 @@
     <section class="servises" id="servises">
         <div class="container">                     
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-md-12">
                     <ul class="servises__list">
                         <li class="servises__list_item servises__list--shopping">      
                             <a href="#" class="servises__list_link">
@@ -88,10 +91,12 @@
                         </li>
                     </ul>   
                 </div>
-                <div class="col-6">
-                    <h2 class="servises__heading-block heading-primary text-white">
+                <div class="col-6 col-md-12">
+                   <div class="servises__heading-block">
+                    <h2 class="heading-primary text-white">
                         Our Servises
                     </h2>
+                   </div>
                 </div>      
             </div>
         </div> 
@@ -133,7 +138,7 @@
    <div class="container">
             <div class="subscribe__content">
                 <h3 class="heading-tertiary">Subscribe To Us</h3>
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa repudiandae assumenda distinctio doloribus hic est rem!</p>
+                <p class="paragraph subscribe__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa repudiandae assumenda distinctio doloribus hic est rem!</p>
                 <form class="subscribe__form" action="#">
                  <input class="subscribe__email" placeholder="Enter your email" type="email">
                  <input class="btn btn--green subscribe__submit" type="submit" value="Subscribe">
@@ -150,7 +155,7 @@
                 <p class="paragraph text-white">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
             </div>
           <div class="row">
-            <div class="col-4">
+            <div class="col-4 col-md-12">
               <div class="blog__card blog__card--1">
                 <div class="blog__date">
                     20 <span class="blog__date--month">NOV</span>
@@ -161,7 +166,7 @@
                   </div>              
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-md-12">
               <div class="blog__card blog__card--2">
                 <div class="blog__date">
                     14 <span class="blog__date--month">NOV</span>
@@ -172,7 +177,7 @@
                   </div>       
               </div>       
             </div>
-            <div class="col-4">
+            <div class="col-4 col-md-12">
                 <div class="blog__card blog__card--3">
                     <div class="blog__date">
                         10 <span class="blog__date--month">NOV</span>
@@ -199,7 +204,7 @@
             <p class="paragraph">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         </div>
         <div class="row u-space-between">
-            <div class="col-5">
+            <div class="col-5 col-lg-6 col-md-12">
                 <form action="#" class="contact__form">
                     <input class="contact__form_item" type="text" placeholder="Your name">
                     <input class="contact__form_item"type="email" placeholder="Your email">
@@ -208,7 +213,7 @@
                     <input class="btn btn--aqua subscribe__submit" type="submit" value="send">
                 </form>
             </div>
-            <div class="col-5">
+            <div class="col-5 col-lg-6 col-md-12">
                 <address class="contact__adress">
                     <strong class="contact__adress_list">Address</strong>
                     <p class="contact__adress_text">123 City name, Street, City, Country</p>
@@ -226,13 +231,13 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 col-sm-12">
                 <p>&copy; 2015 Company. All right reserved</p>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-sm-12">
                 <img class="footer__logo" src="../img/logo_small.png" alt="logo">
             </div>
-            <div class="col-4">
+            <div class="col-4 col-sm-12">
                 <p class="footer__text">Made with <span class="u-red-text">love</span>by Auskteez</p>
             </div>
         </div>

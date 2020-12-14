@@ -11,6 +11,10 @@
         'img-1 img-1 img-1 img-1 img-3 img-3'
         'img-4 img-4 img-4 img-5 img-5 img-5';
     grid-gap: 20px;
+
+    @media (max-width: $SM) {
+        grid-gap: 5px;
+    }
 }
 
 .grid-img {

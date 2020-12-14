@@ -2,12 +2,25 @@
     font-size: 90px;
     font-weight: 700;
     margin-bottom: 40px;
+    text-align: center;
+
+    @media (max-width: $LG) {
+        font-size: 70px;
+    }
+
+    @media (max-width: $SM) {
+        font-size: 50px;
+    }
 }
     
 .heading-secondary {
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 40px;  
+
+    @media (max-width: $SM) {
+        font-size: 50px;
+    }
 }
 
 .heading-tertiary {
@@ -22,6 +35,14 @@
 
 .paragraph {
     font-size: $default-font-size;
-    line-height: 1.6;
+    line-height: $default-line-height;
     margin-bottom: 30px;
+
+    @media (max-width: $LG) {
+        font-size: $small-font-size;
+    }
+
+    @media (max-width: $SM) {
+        margin-bottom: 10px;
+    }
 }
