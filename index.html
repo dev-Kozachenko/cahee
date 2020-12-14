@@ -18,11 +18,11 @@
                 <nav class="header__nav">              
                     <ul class="header__list">
                         <li class="header__item"><a href="#" class="header__link">Home</a></li>
-                        <li class="header__item"><a href="#" class="header__link">About</a></li>
-                        <li class="header__item"><a href="#" class="header__link">Servises</a></li>
-                        <li class="header__item"><a href="#" class="header__link">Gallery</a></li>
-                        <li class="header__item"><a href="#" class="header__link">Blog</a></li>
-                        <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                        <li class="header__item"><a href="#about" class="header__link">About</a></li>
+                        <li class="header__item"><a href="#servises" class="header__link">Servises</a></li>
+                        <li class="header__item"><a href="#gallery" class="header__link">Gallery</a></li>
+                        <li class="header__item"><a href="#blog" class="header__link">Blog</a></li>
+                        <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,13 +35,14 @@
                 </p>
                 <a href="#" class="btn btn--orange">Get free now</a>
             </div>
-            <a href="#" class="start-screen__scroll">
+            <a href="#about" class="start-screen__scroll">
                 <img src="img/scroll.png" alt="">
             </a>
         </div> 
    </div>
+   <main>
    <!-- ABOUT -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -60,7 +61,7 @@
         </div>             
     </section>
     <!-- SERVISES -->
-    <section class="servises">
+    <section class="servises" id="servises">
         <div class="container">                     
             <div class="row">
                 <div class="col-6">
@@ -96,7 +97,7 @@
         </div> 
     </section>
     <!-- GALLERY -->
-   <div class="gallery">
+   <div class="gallery" id="gallery">
       <div class="container">
         <div class="gallery__text">
             <h2 class="heading-primary">
@@ -106,7 +107,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate provident a fuga doloremque suscipit delectus est illo iure ex. Exercitationem, magni omnis! Architecto, quia rem. Id nulla soluta esse commodi!
             </p>
         </div>
-        <div class="container-grid u-m-b">
+        <div class="gallery-grid u-m-b">
             <div class="grid-box grid-box-1">
                 <img class="grid-img" src="img/gallery_1.png" alt="img_1">
             </div>
@@ -140,7 +141,7 @@
             </div>
    </div>
    <!-- BLOG -->
-   <section class="blog">
+   <section class="blog" id="blog">
         <div class="container">
             <div class="blog__text">
                 <h2 class="heading-primary text-white">
@@ -189,7 +190,7 @@
        </div>
   </section>
   <!-- CONTACT -->
-<section class="contact">
+<section class="contact" id="contact">
     <div class="container">
         <div class="contact__text">
             <h2 class="heading-primary">
@@ -205,7 +206,6 @@
                     <input class="contact__form_item"type="tel" placeholder="Your phone number">
                     <textarea class="contact__form_textarea contact__form_item" placeholder="Your message"></textarea>
                     <input class="btn btn--aqua subscribe__submit" type="submit" value="send">
-
                 </form>
             </div>
             <div class="col-5">
@@ -221,6 +221,7 @@
         </div>
     </div>
 </section>
+</main>
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container">

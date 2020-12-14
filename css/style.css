@@ -2,7 +2,9 @@ body, button {
   font-family: "Raleway", "Arial", sans-serif;
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -129,17 +131,32 @@ li {
 .btn--orange {
   background-color: #ff6033;
 }
+.btn--orange:hover {
+  background-color: #f72b3b;
+}
 .btn--blue {
   background-color: #5585a2;
+}
+.btn--blue:hover {
+  background-color: #70bfff;
 }
 .btn--green {
   background-color: #96b92c;
 }
+.btn--green:hover {
+  background-color: #00c4c4;
+}
 .btn--red {
   background-color: #f72b3b;
 }
+.btn--red:hover {
+  background-color: #ff6033;
+}
 .btn--aqua {
   background-color: #00c4c4;
+}
+.btn--aqua:hover {
+  background-color: #70bfff;
 }
 
 .servises__list {
@@ -671,7 +688,7 @@ li {
   grid-area: img-5;
 }
 
-.container-grid {
+.gallery-grid {
   display: grid;
   grid-template-areas: "img-1 img-1 img-1 img-1 img-2 img-2" "img-1 img-1 img-1 img-1 img-3 img-3" "img-4 img-4 img-4 img-5 img-5 img-5";
   grid-gap: 20px;

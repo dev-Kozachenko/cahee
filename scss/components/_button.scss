@@ -12,22 +12,41 @@
 
     &--orange {
         background-color: $color-orange;
+
+        &:hover {
+            background-color: $color-red;
+        }
     }
 
     &--blue {
         background-color: $color-blue;
+
+        &:hover {
+            background-color: $color-blue-light;
+        }
     }
 
     &--green {
         background-color: $color-green;
+
+        &:hover {
+            background-color: $color-aqua;
+        }
     }
 
     &--red {
         background-color: $color-red;
+
+        &:hover {
+            background-color: $color-orange;
+        }
     }
 
     &--aqua {
         background-color: $color-aqua;
+
+        &:hover {
+            background-color: $color-blue-light;
+        }
     }
 }
-

@@ -4,7 +4,7 @@
 .grid-box-4 { grid-area: img-4; }
 .grid-box-5 { grid-area: img-5; }
 
-.container-grid {
+.gallery-grid {
     display: grid;
     grid-template-areas:
         'img-1 img-1 img-1 img-1 img-2 img-2'
@@ -19,4 +19,3 @@
     min-height: 100%;
     object-fit: cover;
 }
-
