@@ -12,12 +12,12 @@
     @media (max-width: $LG) {
       padding: 10px;
       min-height: 250px;
-  }
+    }
 
-  @media (max-width: $MD) {
-    padding: 30px;
-    min-height: 320px;
-}
+    @media (max-width: $MD) {
+      padding: 30px;
+      min-height: 320px;
+    }
 
     &--1 {
         background-image: url(../img/blog_1.png);
@@ -47,6 +47,7 @@
         font-size: 21px;
     }
   }
+
   &__list {
     padding-top: 90px;
 
@@ -61,7 +62,7 @@
       @media (max-width: $LG) {
         font-size: 20px;
     }
-    }
+  }
 
     &--author {
         font-size: 13px;

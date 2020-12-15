@@ -9,6 +9,7 @@
       }
 
       &__list {
+
         display: flex;
         flex-wrap: wrap;
 
@@ -43,60 +44,59 @@
         }
 
         &_span {
-                position: relative;
+            position: relative;
 
-                &,
-                &::before,
-                &::after {
-                    width: 25px;
-                    height: 2px;
-                    background-color: $color-black;
-                    display: inline-block;
-                    transition: all ease .2s;
-                }
-        
-                &::before,
-                &::after {
-                    content: '';
-                    position: absolute;
-                    right: 0;
-                }
-        
-                &::before {
-                    top: 8px;
-                }
-                &::after {
-                    top: -8px;
-                }
+            &,
+            &::before,
+            &::after {
+                width: 25px;
+                height: 2px;
+                background-color: $color-black;
+                display: inline-block;
+                transition: all ease .2s;
             }
+        
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+            }
+        
+            &::before {
+                top: 8px;
+            }
+            &::after {
+                top: -8px;
+            }
+        }  
 
-            &_input:checked ~ &_btn &_span {
+            input:checked ~ &_btn &_span {
                 background-color: transparent;
             }
 
-            &_input:checked ~ &_btn &_span::before {
+            input:checked ~ &_btn &_span::before {
                 top: 0;
                 transform: rotate(135deg);
             }
         
-            &_input:checked ~ &_btn &_span::after {
+            input:checked ~ &_btn &_span::after {
                 top: 0;
                 transform: rotate(-135deg);
             }
 
-            &_input:checked {
-                @media (max-width: $MD) {
-                   ~ .header__list {
-                        visibility: visible;
-                        pointer-events: all;
-                        transform: translateY(0);
-                        opacity: 1;
-                    }
+            input:checked {
+            @media (max-width: $MD) {
+               ~ .header__list {
+                    visibility: visible;
+                    pointer-events: all;
+                    transform: translateY(0);
+                    opacity: 1;
                 }
-            }
+            } 
+        }
     }
-
-
+    
     &__item:not(:last-child) {
         margin-right: 20px;
     }
@@ -113,7 +113,6 @@
         @media (max-width: $MD) {
             display: block;
           }
-
 
         &::before {
             content: "";
